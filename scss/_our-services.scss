@@ -1,0 +1,43 @@
+.our-services {
+    background: url(../img/our-services.jpg) 0 0/cover no-repeat;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        margin: 20px 0;
+        font-size: 2rem;
+        background-color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+        max-height: 100px;
+    } 
+    &__item-text {
+        margin: 30px auto;
+        padding: 0 30px;
+        max-width: 300px;
+        text-align: center;
+    }   
+    &__item-text::after {
+        content: "";
+        height: 100px;
+        width: 1px;
+        color: #9d9d9d;
+    }
+    &__item-svg {
+        padding: 0 20px;
+    }
+    &__text {
+        font-size: 9rem;
+        color: #fff;
+        margin-top: 150px;
+    }
+}
