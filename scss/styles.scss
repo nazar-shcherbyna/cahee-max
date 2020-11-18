@@ -1,5 +1,7 @@
 @import 'normalize';
 @import 'our-services';
+@import 'gallery';
+@import 'mixins';
 
 * {
     box-sizing: border-box;
@@ -114,7 +116,7 @@ html {
     text-align: center;
 }
 
-.footor-bgc-bem {
+.about-us-bgc-bem {
     background: url(../img/footor-bgc.jpg) 0 0/cover no-repeat;
 }
 
@@ -132,7 +134,7 @@ html {
     margin: 180px 0 180px 80px;
 }
 
-.about__text-bem h1 {
+.about__text-bem h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 9rem;
     color: #fff;
@@ -144,5 +146,5 @@ html {
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 1.7rem;
-    font-weight: 100;
+    font-weight: 300;
 }

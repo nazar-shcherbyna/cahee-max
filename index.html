@@ -6,10 +6,12 @@
     <title>BA Cahee Max</title>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="all">
-        <main class="container">
+    <section class="all">
+        <div class="container">
             <header class="head-bem">
                 <p class="head__p-bem">Cahee</p>
                 <ul class="head__nav-bem">
@@ -31,22 +33,23 @@
                     <image width="24px" height="40px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAoCAQAAABOBPLeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCwsSIhRDGqBnAAADD0lEQVQ4y2WVP4hcVRTGf9/dmYmlG92BwCzIkmL/DC4E7BYTFDVjKRYhQnYxVSxSJYXVoo1FksIUKoIhGgOCNmmcRFECNkKQJWRlU4RtshrMrk4Qm50Z5kvx7n3vznhh3p2Zd875/pzz7tMiIIwwBM3zul+hzXPA32zys37gvkcCwAgtkpaWOcMqz8TkWIh9XeVT7hKLainFn/a6Zo32/L22eGJ4lgV1mDE85AO+KMJqMe99PqTGE13wNzxkUNSn7llO6Lxn9RlNfwRiqonRu75End/0Ft/R04hEaERPv/imXqLll/mTjUJDW123tOG32Y6863SArgZgQHN86yPaocNmoMFZWvRY1baSnjVucIM1x5/eZpWeWz7rRuCwThkucs/JB7QCoBVFaoJNXRQ6xeHAGxzQrq47Og3GQwEMo3SM4Tq7PqDjgWPGXR4Vt4qPYrZjARA8clf4WFAb2HK/Ck8h+RXcZ8vQrnlG0MuD8j0tA+oBzwfqjmyrEEcsR8mR4dC4XlMaqjLUKBiwKnolCiG545zUvhDFgFTeFUVrZEJTiq/oqEe64kgoN6NWPgsltPAdlsGDVL2kWkxrEulyFx5Qfq/QS4RJaVXX8ztFeiitjsLzBipNUmm6U8J4i6pe5A6WCHknVO5M4KWUGllFjWFUYdl4EDwhOCc4bnaBGlRZmVmYSx5XFar+KkPwxD/V2IQKctJ1xlJKDXmf/y90cpngAfE4SzjKdIwpqQkNgvbA0zlbo2yOspmaBu8F7gkWaOQty4euFNzQvGEz+LbRcR/KR4CxbsfrIb8pdDtwi32aeseZO+PdjvtJzXifm4EH+sr4HG1KUoWd1dMhtMQ5wzU/CPR9mR2m+ZK5REFjweA5rnGQHX1Mf6oJj/mXDi2t8Ct/5Y2LiS/ytY54wHluiakmoA2GHKWlE0zpD/9HfENQ5wXO6HPmGLLOZWG0mDifZp1Z0GN3ua9/DAc1746a1StLUCREX5Z5T2s0qskFoO+r+sR3y3NwkerMUfACr+lVL2nGaNe/85N+9JZGlc1PATcgdHINSYnkAAAAAElFTkSuQmCC" />
                 </svg>
             </div>
-        </main>
-    </div> 
-    <div class="footor-bgc-bem">
+        </div>
+    </section> 
+    
+    <section class="about-us-bgc-bem">
         <main class="container">
             <footor class="about-bem">
                 <div class="about__plates-bem">
                     <img src="img/plates.png" alt="">
                 </div>
                 <article class="about__text-bem">
-                    <h1>About us</h1>
+                    <h2>About us</h2>
                     <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>  
                     <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
                 </article>
             </footor>
         </main>
-    </div> 
+    </section> 
 
     <section class="our-services">
         <div class="container">
@@ -77,6 +80,37 @@
                     </div>
                 </div>
                 <div class="our-services__text">Our Services</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2 class="gallery__h2">Gallery</h2>
+            <p class="gallery__p">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="gallery__pictures">
+                <div class="gallery__pictures--three">
+                    <picture class="picture picture__large">
+                        <source media="(max-width: 768px)" srcset="img-lg.png">
+                        <img class="picture__img" src="img/img-lg.png" alt="img-lg">
+                    </picture>
+                    <div class="gallery__pictures--twoo-sm">
+                        <picture class="picture picture__small">
+                            <img class="picture__img" src="img/img-small-1.png" alt="img-small-1">
+                        </picture>
+                        <picture class="picture picture__small">
+                            <img class="picture__img" src="img/img-small-2.png" alt="img-small-2">
+                        </picture>
+                    </div>
+                </div>
+                <div class="gallery__pictures--twoo">
+                    <picture class="picture picture__normal">
+                        <img class="picture__img" src="img/img-norm-1.png" alt="img-norm-1">
+                    </picture>
+                    <picture class="picture picture__normal">
+                        <img class="picture__img" src="img/img-norm-2.png" alt="img-norm-2">
+                    </picture>
+                </div>
             </div>
         </div>
     </section>
