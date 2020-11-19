@@ -90,29 +90,82 @@
             <p class="gallery__p">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="gallery__pictures">
                 <div class="gallery__pictures--three">
-                    <picture class="picture picture__large">
-                        <source media="(max-width: 768px)" srcset="img-lg.png">
-                        <img class="picture__img" src="img/img-lg.png" alt="img-lg">
-                    </picture>
-                    <div class="gallery__pictures--twoo-sm">
-                        <picture class="picture picture__small">
-                            <img class="picture__img" src="img/img-small-1.png" alt="img-small-1">
+                    <div class="gallery__picture--lg">
+                        <picture class="gallery__picture-lg">
+                            <source srcset="img/img-lg.png">
+                            <img src="img/img-lg.png" alt="img-lg">
                         </picture>
-                        <picture class="picture picture__small">
-                            <img class="picture__img" src="img/img-small-2.png" alt="img-small-2">
+                    </div>
+                    <div class="gallery__pictures--one-sm">
+                        <picture class="gallery__picture-small-one">
+                            <source srcset="img/img-small-1.png">
+                            <img src="img/img-small-1.png" alt="img-small-1">
+                        </picture>
+                    </div>
+                    <div class="gallery__pictures--twoo-sm">
+                        <picture class="gallery__picture-small-twoo">
+                            <source srcset="img/img-small-2.png">
+                            <img src="img/img-small-2.png" alt="img-small-2">
                         </picture>
                     </div>
                 </div>
                 <div class="gallery__pictures--twoo">
-                    <picture class="picture picture__normal">
-                        <img class="picture__img" src="img/img-norm-1.png" alt="img-norm-1">
+                    <picture>
+                        <source srcset="img/img-norm-1.png">
+                        <img class="gallery__picture-img" src="img/img-norm-1.png" alt="img-norm-1">
                     </picture>
-                    <picture class="picture picture__normal">
-                        <img class="picture__img" src="img/img-norm-2.png" alt="img-norm-2">
+                    <picture>
+                        <source srcset="img/img-norm-2.png">
+                        <img class="gallery__picture-img" src="img/img-norm-2.png" alt="img-norm-2">
                     </picture>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="subscribe">
+        <div class="container">
+            <h3 class="subscribe__h3">Subscribe To Us</h3>
+            <p class="subscribe__p">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <input class="subscribe__input" type="email" name="email" id="subscribe_input-btn" placeholder="Your email address...">
+            <button class="button" type="button" id="subscribe_input-btn">SUBSCRIBE</button>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="contact__h2">Contact</h2>
+            <p class="contact__p">For new projects, ideas, business or anything
+                you'd like to discuss, contact with me!</p>
+            <div class="contact__form">
+                <div class="contact__input">
+                    <input type="text" name="text" placeholder="Your name...">
+                    <input type="email" name="email" placeholder="Your email...">
+                    <input type="tel" name="tel" placeholder="Your phone number...">
+                    <textarea rows="10" placeholder="Your messege"></textarea>
+                </div>
+                <div class="cahee__info">
+                    <h2 class="contact__info-h2">address</h2>
+                    <p class="contact__info-p">123 City name, Street, City, Country</p>
+                    <h2 class="contact__info-h2">email</h2>
+                    <p class="contact__info-p">cahee@domain.com</p>
+                    <h2 class="contact__info-h2">phone</h2>
+                    <p class="contact__info-p">+012 345 6789</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="cahee cahee--footer">
+                <div class="cahee__company">© 2015 Company. All right reserved.</div>
+                <div class="cahee__logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+                <div class="cahee__some">Made with <span>love</span> by Auskteez</div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

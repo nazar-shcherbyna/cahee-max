@@ -1,0 +1,28 @@
+.footer {
+    background-color: #262626;
+}
+
+.cahee--footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.cahee__company {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #b9b9b9;
+}
+
+.cahee__some {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #b9b9b9;
+}
+
+.cahee__some > span {
+    color: #ff2b58;
+    font-weight: 400;
+}

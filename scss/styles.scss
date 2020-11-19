@@ -1,7 +1,10 @@
 @import 'normalize';
+@import 'mixins';
 @import 'our-services';
 @import 'gallery';
-@import 'mixins';
+@import 'subscribe';
+@import 'contact';
+@import 'footer';
 
 * {
     box-sizing: border-box;
@@ -12,6 +15,7 @@ a, button {
 }
 
 html {
+    font-family: $text-ff;
     font-size: 10px;
 }
 
