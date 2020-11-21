@@ -10,18 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="all">
+    <section class="cahee">
         <div class="container">
-            <header class="head-bem">
-                <p class="head__p-bem">Cahee</p>
-                <ul class="head__nav-bem">
-                    <li><a class="head link-bem" href="#">home</a></li>
-                    <li><a class="head link-bem" href="#">about</a></li>
-                    <li><a class="head link-bem" href="#">services</a></li>
-                    <li><a class="head link-bem" href="#">gallery</a></li>
-                    <li><a class="head link-bem" href="#">blog</a></li>
-                    <li><a class="head link-bem" href="#">contact</a></li>
-                </ul>
+            <header class="cahee__header">
+                <p class="cahee__p">Cahee</p>
+
+                <input type="checkbox" name="toggler-input" id="toggler-input">
+                <label for="toggler-input" id="toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <nav class="navi">
+                    <ul class="navi__items">
+                        <li><a class="navi__item" href="#" onclick="closeMenu()">home</a></li>
+                        <li><a class="navi__item" href="#" onclick="closeMenu()">about</a></li>
+                        <li><a class="navi__item" href="#" onclick="closeMenu()">services</a></li>
+                        <li><a class="navi__item" href="#" onclick="closeMenu()">gallery</a></li>
+                        <li><a class="navi__item" href="#" onclick="closeMenu()">blog</a></li>
+                        <li><a class="navi__item" href="#" onclick="closeMenu()">contact</a></li>
+                    </ul>
+                </nav>
             </header>
             <div class="content-bem">
                 <h1 class="content__name-bem">Fresh Life</h1>
