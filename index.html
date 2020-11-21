@@ -12,7 +12,7 @@
 <body>
     <section class="cahee">
         <div class="container">
-            <header class="cahee__header">
+            <header class="cahee__header" id="home">
                 <p class="cahee__p">Cahee</p>
 
                 <input type="checkbox" name="toggler-input" id="toggler-input">
@@ -24,8 +24,8 @@
 
                 <nav class="navi">
                     <ul class="navi__items">
-                        <li><a class="navi__item" href="#" onclick="closeMenu()">home</a></li>
-                        <li><a class="navi__item" href="#" onclick="closeMenu()">about</a></li>
+                        <li><a class="navi__item" href="#home" onclick="closeMenu()">home</a></li>
+                        <li><a class="navi__item" href="#about-us" onclick="closeMenu()">about</a></li>
                         <li><a class="navi__item" href="#" onclick="closeMenu()">services</a></li>
                         <li><a class="navi__item" href="#" onclick="closeMenu()">gallery</a></li>
                         <li><a class="navi__item" href="#" onclick="closeMenu()">blog</a></li>
@@ -46,7 +46,7 @@
         </div>
     </section> 
     
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <div class="container">
             <div class="about-us__bem">
                 <div class="about-us__plates">
@@ -202,7 +202,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="cahee cahee--footer">
+            <div class="cahee--footer">
                 <div class="cahee__company">© 2015 Company. All right reserved.</div>
                 <div class="cahee__logo">
                     <img src="img/logo.png" alt="Logo">
@@ -211,6 +211,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function closeMenu() {
+            document.querySelector('toggler').click();
+        }
+    </script>
 
 </body>
 </html>
