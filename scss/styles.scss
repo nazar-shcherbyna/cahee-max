@@ -5,6 +5,9 @@
 @import 'subscribe';
 @import 'contact';
 @import 'footer';
+@import 'blog.scss';
+@import 'about-us';
+
 
 * {
     box-sizing: border-box;
@@ -17,17 +20,18 @@ a, button {
 html {
     font-family: $text-ff;
     font-size: 10px;
-}
-
-.container {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
+    scroll-behavior: smooth;
 }
 
 .all {
     background: url(../img/main-bgc.jpg) 0 0/cover no-repeat;
     min-height: 100vh;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .head-bem {
@@ -45,6 +49,9 @@ html {
 .head__nav-bem {
     list-style: none;
     display: flex;
+    @media screen and (max-width: 968px) {
+        display: none;
+    }
 }
 
 .link-bem {
@@ -116,39 +123,6 @@ html {
 }
 
 .scroll-bem {
-    margin-top: 100px;
+    padding: 80px 0 20px;
     text-align: center;
-}
-
-.about-us-bgc-bem {
-    background: url(../img/footor-bgc.jpg) 0 0/cover no-repeat;
-}
-
-.about-bem {
-    display: flex;
-    position: relative;
-    min-height: 100vh;
-}
-
-.about__plates-bem {
-    margin: 50px 0 10px;
-}
-
-.about__text-bem {
-    margin: 180px 0 180px 80px;
-}
-
-.about__text-bem h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 9rem;
-    color: #fff;
-    font-weight: 700;
-    margin: 20px 0;
-}
-
-.about__text-bem p {
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 300;
 }

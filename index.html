@@ -36,19 +36,19 @@
         </div>
     </section> 
     
-    <section class="about-us-bgc-bem">
-        <main class="container">
-            <footor class="about-bem">
-                <div class="about__plates-bem">
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us__bem">
+                <div class="about-us__plates">
                     <img src="img/plates.png" alt="">
                 </div>
-                <article class="about__text-bem">
-                    <h2>About us</h2>
-                    <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>  
-                    <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                <article class="about-us__text">
+                    <h2 class="about-us__h2">About us</h2>
+                    <p class="about-us__p">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>  
+                    <p class="about-us__p">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
                 </article>
-            </footor>
-        </main>
+            </div>
+        </div>
     </section> 
 
     <section class="our-services">
@@ -89,35 +89,22 @@
             <h2 class="gallery__h2">Gallery</h2>
             <p class="gallery__p">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="gallery__pictures">
-                <div class="gallery__pictures--three">
-                    <div class="gallery__picture--lg">
-                        <picture class="gallery__picture-lg">
-                            <source srcset="img/img-lg.png">
-                            <img src="img/img-lg.png" alt="img-lg">
-                        </picture>
+                <div class="gallery__photo gallery__lg">
+                    <img class="gallery__lg--img" src="img/img-lg.png" alt="img-lg">
+                </div>
+                <div class="gallery__pictures-sm">
+                    <div class="gallery__photo gallery__sm">
+                        <img src="img/img-small-1.png" alt="img-small-1">
                     </div>
-                    <div class="gallery__pictures--one-sm">
-                        <picture class="gallery__picture-small-one">
-                            <source srcset="img/img-small-1.png">
-                            <img src="img/img-small-1.png" alt="img-small-1">
-                        </picture>
-                    </div>
-                    <div class="gallery__pictures--twoo-sm">
-                        <picture class="gallery__picture-small-twoo">
-                            <source srcset="img/img-small-2.png">
-                            <img src="img/img-small-2.png" alt="img-small-2">
-                        </picture>
+                    <div class="gallery__photo gallery__sm">
+                        <img src="img/img-small-2.png" alt="img-small-2">
                     </div>
                 </div>
-                <div class="gallery__pictures--twoo">
-                    <picture>
-                        <source srcset="img/img-norm-1.png">
-                        <img class="gallery__picture-img" src="img/img-norm-1.png" alt="img-norm-1">
-                    </picture>
-                    <picture>
-                        <source srcset="img/img-norm-2.png">
-                        <img class="gallery__picture-img" src="img/img-norm-2.png" alt="img-norm-2">
-                    </picture>
+                <div class="gallery__photo gallery__pictures--twoo">
+                    <img class="gallery__picture-img" src="img/img-norm-1.png" alt="img-norm-1">
+                </div>
+                <div class="gallery__photo gallery__pictures--twoo">
+                    <img class="gallery__picture-img" src="img/img-norm-2.png" alt="img-norm-2">
                 </div>
             </div>
         </div>
@@ -129,6 +116,53 @@
             <p class="subscribe__p">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <input class="subscribe__input" type="email" name="email" id="subscribe_input-btn" placeholder="Your email address...">
             <button class="button" type="button" id="subscribe_input-btn">SUBSCRIBE</button>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog__text">
+                <h1 class="blog__name">blog</h1>
+                <p class="blog__about">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor <br> in reprehenderit in voluptate velit.</p>
+            </div>
+            <div class="blog__link">
+                <div class="blog__img">
+                    <a href="#" class="blog__img-link">
+                        <img src="img/img1.jpg" alt="">
+                    </a>
+                    <div class="blog__data">
+                        <span class="blog__num">20</span>
+                        <span class="blog__mounth">nov</span>
+                    </div>
+                    <p class="blog__img-about">
+                        Green Smoothies: Too Much of a Good Thing?
+                    </p>
+                    <p class="blog__img-text">By Auskteez - 2 hours ago</p>
+                </div>
+                <div class="blog__img">
+                    <a class="blog__img-link" href="#"><img src="img/img2.jpg" alt=""></a>
+                        <div class="blog__data">
+                            <span class="blog__num">14</span>
+                            <span class="blog__mounth">nov</span>
+                        </div>
+                        <p class="blog__img-about">
+                            Growing Food and a “Thirst” for Innovation
+                        </p>
+                        <p class="blog__img-text">By Auskteez - 3 hours ago</p>
+                </div>
+                <div class="blog__img">
+                    <a href="#" class="blog__img-link"><img src="img/img3.jpg" alt=""></a>
+                        <div class="blog__data">
+                            <span class="blog__num">10</span>
+                            <span class="blog__mounth">nov</span>
+                        </div>
+                        <p class="blog__img-about">
+                            Pesticides & Food: What You Need to Know
+                        </p>
+                        <p class="blog__img-text">By Auskteez - 6 hours ago</p>
+                </div>
+            </div>
+            <div class="blog__button"><button class="blog__button--for" type="button">viev more</button></div>
         </div>
     </section>
 
@@ -144,7 +178,7 @@
                     <input type="tel" name="tel" placeholder="Your phone number...">
                     <textarea rows="10" placeholder="Your messege"></textarea>
                 </div>
-                <div class="cahee__info">
+                <div class="contact__info">
                     <h2 class="contact__info-h2">address</h2>
                     <p class="contact__info-p">123 City name, Street, City, Country</p>
                     <h2 class="contact__info-h2">email</h2>
@@ -155,6 +189,7 @@
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container">
             <div class="cahee cahee--footer">

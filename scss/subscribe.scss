@@ -3,13 +3,13 @@
 
 .subscribe {
     font-family: $text-ff;
-    background: url(../img/subscribe-bgc.jpg) 0 0/cover no-repeat;
+    background: url(../img/subscribe-bgc.jpg) 50% 0/cover no-repeat;
     color: $text-color;
     &__h3 {
         font-size: 4rem;
         font-weight: 700;
         padding: 150px 0 0;
-        margin-bottom: 20px;
+        margin: 0 0 20px;
     }
     &__p {
         max-width: 550px;

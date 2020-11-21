@@ -8,6 +8,10 @@
     &__items {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 968px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     }
     &__item {
         margin: 20px 0;
@@ -20,17 +24,28 @@
     } 
     &__item-text {
         padding: 30px;
-        width: 300px;
+        min-width: 300px;
         text-align: center;
         border-right: 2px solid #000;
+        @media screen and (max-width: 968px) {
+            min-width: 75%;
+        }
     }   
     &__item-svg {
-        padding: 0 20px;
         min-width: 100px;
+        padding: 10px 20px;
+        @media screen and (max-width: 968px) {
+            min-width: 25%;
+        }
     }
     &__text {
         font-size: 9rem;
         color: #fff;
-        margin-top: 150px;
+        margin-top: 15rem;
+        padding: 0 4rem;
+        @media screen and (max-width: 968px) {
+            font-size: 7rem;
+            margin: 0;
+        }
     }
 }

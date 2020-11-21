@@ -1,0 +1,48 @@
+.about-us {
+    background: #00b9b9;
+    &__bem {
+        display: flex;
+        position: relative;
+        min-height: 100vh;
+    }
+    &__plates {
+        margin: 50px 0 65px;
+        max-width: 60%;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__text {
+        padding: 20px;
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        max-width: 40%;
+    }
+    &__h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 9rem;
+        color: #fff;
+        font-weight: 700;
+        margin: 20px 0;
+        @media screen and (max-width: 968px) {
+            font-size: 7rem;
+        }
+    }
+    &__p {
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.7rem;
+        font-weight: 300;
+        line-height: 1.6;
+        @media screen and (max-width: 968px) {
+            font-size: 1.4rem;
+            line-height: 1.4;
+        }
+    }
+}
+
+
+
+
