@@ -33,55 +33,58 @@ html {
 .cahee {
     background: url(../img/header-bgc.jpg) 0 0/cover no-repeat;
     min-height: 100vh;
+    position: relative;
     &__header {
         display: flex;
         justify-content: space-between;
     }
     &__p {
         font-size: 5rem;
-        margin: 50px 0px 40px;
+        margin: 50px 0 40px;
         font-family: 'Pacifico', cursive;
         font-weight: 400;
+        @media screen and (max-width: 992px) {
+            margin: 25px 0 20px;
+        }
     }
-}
-
-.content-bem {
-    font-family: 'Raleway', sans-serif;
-}
-
-.content__name-bem {
-    font-size: 6rem;
-    font-weight: 900;
-    margin: 115px 0px 30px;
-}
-
-.content__text-bem {
-    font-weight: 400;
-    font-size: 1.7rem;
-    max-width: 370px;
-    margin: 30px 0;
-}
-
-.content__button-bem {
-    width: 200px;
-    height: 60px;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 300;
-    background-color: #ff6033;
-    color: #fff;
-    border: 0;
-}
-
-.content__button-bem:hover,
-.content__button-bem:focus,
-.content__button-bem:active {
-    cursor: pointer;
-    box-shadow: 0 3px 5px 3px rgba(0,0,0, .5);
-    transition: all .5s;
-}
-
-.scroll-bem {
-    padding: 80px 0 20px;
-    text-align: center;
+    &__scroll {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+    }
+    &__content {
+        font-family: 'Raleway', sans-serif;
+        @media screen and (max-width: 992px) {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    &__name {
+        font-size: 6rem;
+        font-weight: 900;
+        margin: 115px 0px 30px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 1.7rem;
+        max-width: 370px;
+        margin: 30px auto;
+    }
+    &__button {
+        width: 200px;
+        height: 60px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 300;
+        background-color: #ff6033;
+        color: #fff;
+        border: 0;
+    }
+    &__button:hover,
+    &__button:focus,
+    &__button:active {
+        cursor: pointer;
+        box-shadow: 0 3px 5px 3px rgba(0,0,0, .5);
+        transition: all .5s;
+    }
 }

@@ -5,11 +5,20 @@
     font-family: $text-ff;
     background: url(../img/subscribe-bgc.jpg) 50% 0/cover no-repeat;
     color: $text-color;
+    @media screen and (max-width: 968px) {
+        padding-bottom: 2rem;
+        background: #fff;
+    }
     &__h3 {
         font-size: 4rem;
         font-weight: 700;
         padding: 150px 0 0;
         margin: 0 0 20px;
+        @media screen and (max-width: 968px) {
+            text-align: center;
+            padding: 20px 0 10px;
+            margin: 0;
+        }
     }
     &__p {
         max-width: 550px;
@@ -17,6 +26,10 @@
         font-weight: 300;
         line-height: 1.6;
         margin: 20px 0;
+        @media screen and (max-width: 968px) {
+            text-align: center;
+            margin: 0 auto;
+        }
     }
     &__input {
         outline: none;
@@ -34,6 +47,14 @@
             transition: .2s all ease-in-out;
             box-shadow: 0 0 3px rgba($color: #000000, $alpha: .5);
         }
+        @media screen and (max-width: 968px) {
+            display: block;
+            margin: 20px auto 10px;
+            width: 80%;
+        }
+        @media screen and (max-width: 768px) {
+            margin: 10px auto;
+        }
     }
 }
 
@@ -50,6 +71,11 @@
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.35;
+    @media screen and (max-width: 968px) {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+    }
 }
 
 .button:hover,

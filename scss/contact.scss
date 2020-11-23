@@ -6,15 +6,19 @@
     font-family: $text-ff;
     background: url(../img/bgc.jpg) 0 0/cover no-repeat;
     min-height: 100vh;
-}
-
-.contact {
     &__h2 {
-    margin: 0;
-    text-align: center;
-    padding: 90px 0 40px;
-    font-weight: 700;
-    font-size: 9rem;
+        margin: 0;
+        text-align: center;
+        padding: 90px 0 40px;
+        font-weight: 700;
+        font-size: 9rem;
+        @media screen and (max-width: 768px) {
+            font-size: 5rem;
+            padding: 30px 0 10px;
+        }
+        @media screen and (max-width: 576px) {
+            padding: 15px 0 10px;
+        }
     }
     &__p {
         font-weight: 200;
@@ -23,20 +27,41 @@
         margin: 0 auto;
         text-align: center;
     }
-}
-.contact__form {
-    display: flex;
-    margin: 40px 0 0 0;
-}
-
-.contact__input {
-    display: flex;
-    flex-direction: column;
-    min-width: 500px;
-    @media screen and (max-width: 968px) {
-        min-width: 400px;
+    &__form {
+        display: flex;
+        margin: 40px 0 0;
+        padding: 10px 0;
+        @media screen and (max-width: 768px) {
+            display: block;
+            margin: 20px 0 0;
+        }
+        @media screen and (max-width: 576px) {
+            margin: 0;
+        }
+    }
+    &__input {
+        display: flex;
+        flex-direction: column;
+        min-width: 500px;
+        @media screen and (max-width: 968px) {
+            min-width: 400px;
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 576px) {
+            max-width: 90%;
+        }
+        input {
+            max-width: 90%;
+        }
+        textarea {
+            max-width: 90%;
+        }
     }
 }
+
 
 .contact__input input, 
 .contact__input textarea {
@@ -45,10 +70,15 @@
     margin-bottom: 15px;
     color: #fff;
     background-color: #00c4c4;
-    opacity: .5;
+    opacity: .7;
     font-size: 1.5rem;
     font-weight: 200;
     padding: 15px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 10px;
+        font-size: 1.4;
+        padding: 12px;
+    }
 }
 
 .contact__input input::placeholder,
@@ -74,6 +104,10 @@
     @media screen and (max-width: 968px) {
         margin-left: 5rem;
     }
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 .contact__info-h2 {
@@ -88,4 +122,8 @@
     font-size: 2rem;
     font-weight: 200;
     margin: 5px 0 20px;
+    @media screen and (max-width: 768px) {
+        font-size: 1.8rem;
+        margin: 5px 0 10px;
+    }
 }

@@ -5,11 +5,18 @@
     background-color: #ffe92f;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    @media screen and (max-width: 768px) {
+        min-height: 100%;
+    }
     &__h2 {
         font-size: 9rem;
         font-weight: 700;
         margin: 0;
         padding: 80px 0 20px 0;
+        @media screen and (max-width: 768px) {
+            font-size: 5rem;
+            padding: 20px 0 10px 0;
+        }
     }
     &__p {
         font-size: 1.7rem;
@@ -18,11 +25,20 @@
         margin: 0 auto;
         line-height: 1.6;
         margin-bottom: 4rem;
+        @media screen and (max-width: 768px) {
+            font-size: 1.4rem;
+            max-width: 80%;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
     }
     &__pictures {
         padding-bottom: 5rem;
         display: flex;
         flex-wrap: wrap;
+        @media screen and (max-width: 768px) {
+            padding-bottom: 10px;
+        }
     }
     &__photo {
         padding: .9em;

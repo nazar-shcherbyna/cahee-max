@@ -1,13 +1,22 @@
 .about-us {
     background: #00b9b9;
+    @media screen and (max-width: 768px) {
+        background: #00b9b9;
+    }
     &__bem {
         display: flex;
         position: relative;
         min-height: 100vh;
+        @media screen and (max-width: 768px) {
+            min-height: 100%;
+        }
     }
     &__plates {
         margin: 50px 0 65px;
         max-width: 60%;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
         img {
             width: 100%;
             object-fit: cover;
@@ -19,6 +28,9 @@
         align-self: center;
         flex-direction: column;
         max-width: 40%;
+        @media screen and (max-width: 768px) {
+            max-width: none;
+        }
     }
     &__h2 {
         font-family: 'Raleway', sans-serif;
@@ -28,6 +40,11 @@
         margin: 20px 0;
         @media screen and (max-width: 968px) {
             font-size: 7rem;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 4rem;
+            text-align: center;
+            margin: 5px 0;
         }
     }
     &__p {
@@ -39,6 +56,11 @@
         @media screen and (max-width: 968px) {
             font-size: 1.4rem;
             line-height: 1.4;
+        }
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            font-size: 1.4rem;
+            margin: 10px 0;
         }
     }
 }

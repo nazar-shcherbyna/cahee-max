@@ -2,9 +2,15 @@
     background-color: #b07cf7;
     font-family: 'Raleway', sans-serif;
     min-height: 100vh;
+    @media screen and (max-width: 768px) {
+        min-height: 80vh;
+    }
     &__text {
         text-align: center;
         padding: 5rem 0 2rem;
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
     } 
     &__name {
         font-size: 9rem;
@@ -13,16 +19,27 @@
         padding-top: 2rem;
         margin: 0;
         font-weight: 700;
+        @media screen and (max-width: 768px) {
+            font-size: 6rem;
+            line-height: 1;
+        }
     }
     &__about {
         font-size: 1.7rem;
         color: #f4eefe;
         font-weight: 200;
         line-height: 1.5;
+        @media screen and (max-width: 768px) {
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
     }
     &__link {
         display: flex;
         padding-bottom: 5rem;
+        @media screen and (max-width: 768px) {
+            padding-bottom: 3rem;
+        }
     }
     &__img {
         width: calc(33.33% - 15px);
@@ -31,6 +48,9 @@
         overflow: hidden;
         position: relative;
         box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .7);
+        @media screen and (max-width: 768px) {
+            margin: 0 auto;
+        }
     }
     &__img-link {
         position: absolute;
@@ -61,6 +81,9 @@
         color: #fff;
         text-align: center;
         background-color: rgba(0, 0, 0, .5);
+        @media screen and (max-width: 768px) {
+            margin: 15px;
+        }
     } 
     &__num {
         font-size: 3.2rem;
@@ -90,6 +113,9 @@
     }
     &__button {
         padding-bottom: 12rem;
+        @media screen and (max-width: 768px) {
+            padding-bottom: 4rem;
+        }
     }
     &__button--for {
         background-color: #f72b3b;
