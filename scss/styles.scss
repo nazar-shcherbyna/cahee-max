@@ -46,6 +46,10 @@ html {
         @media screen and (max-width: 992px) {
             margin: 25px 0 20px;
         }
+        @media screen and (max-width: 576px) {
+            font-size: 4rem;
+            margin: 20px 0;
+        }
     }
     &__scroll {
         position: absolute;
@@ -53,6 +57,7 @@ html {
         left: 50%;
     }
     &__content {
+        padding-bottom: 50px;
         font-family: 'Raleway', sans-serif;
         @media screen and (max-width: 992px) {
             margin: 0 auto;
@@ -63,6 +68,10 @@ html {
         font-size: 6rem;
         font-weight: 900;
         margin: 115px 0px 30px;
+        @media screen and (max-width: 576px) {
+            font-size: 5rem;
+            margin: 60px 0 30px;
+        }
     }
     &__text {
         font-weight: 400;
