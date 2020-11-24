@@ -37,27 +37,16 @@
         }
         @media screen and (max-width: 576px) {
             margin: 0;
+            padding: 0;
         }
     }
     &__input {
         display: flex;
         flex-direction: column;
-        min-width: 500px;
-        @media screen and (max-width: 968px) {
-            min-width: 400px;
-        }
+        width: 50%;
         @media screen and (max-width: 768px) {
-            max-width: 90%;
             margin: 0 auto;
-        }
-        @media screen and (max-width: 576px) {
-            max-width: 90%;
-        }
-        input {
-            max-width: 90%;
-        }
-        textarea {
-            max-width: 90%;
+            width: 100%;
         }
     }
 }
